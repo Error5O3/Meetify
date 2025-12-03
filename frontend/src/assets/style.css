@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+/*variables*/
+:root {
+    /*colors*/
+    --light:#dcdcdc;
+    --dark:#6b6b6b;
+    --hover_dark:#0da563;
+    --mid:#c1c1c1;
+    --text:#000000;
+    --primary: #00BE71;
+    --dark_primary: #0a5b38;
+    --light_primary: rgb(219, 251, 229);
+
+
+    /*text size*/
+    --heading: 32px;
+    --sub_h1:24px;
+    --sub_h2:20px;
+    --detail:16px;
+}
+
+body {
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
