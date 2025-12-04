@@ -11,5 +11,5 @@ app.use((req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Meetify page listening at http://localhost:${port}`);
+  console.log(`Meetify page listening at :${port}`);
 });

@@ -3,6 +3,7 @@ package router
 import (
 	"server/internal/event"
 	"server/internal/user"
+	"time"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -12,18 +13,18 @@ var r *gin.Engine
 
 func InitRouter(userHandler *user.Handler, eventHandler *event.Handler) {
 	r = gin.Default()
-	// r.Use(cors.New(cors.Config{
-	// 	AllowOrigins:     []string{"http://192.168.4.76:8080"},
-	// 	AllowMethods:     []string{"GET", "POST", "DELETE"},
-	// 	AllowHeaders:     []string{"Content-Type"},
-	// 	ExposeHeaders:    []string{"Content-Length"},
-	// 	AllowCredentials: true,
-	// 	AllowOriginFunc: func(origin string) bool {
+	r.Use(cors.New(cors.Config{
+		AllowOrigins:     []string{"http://18.222.30.255:8080"},
+		AllowMethods:     []string{"GET", "POST", "DELETE"},
+		AllowHeaders:     []string{"Content-Type"},
+		ExposeHeaders:    []string{"Content-Length"},
+		AllowCredentials: true,
+		AllowOriginFunc: func(origin string) bool {
 
-	// 		return origin == "http://192.168.4.76:8080"
-	// 	},
-	// 	MaxAge: 12 * time.Hour,
-	// }))
+			return origin == "http://192.168.4.76:8080"
+		},
+		MaxAge: 12 * time.Hour,
+	}))
 
 	r.Use(cors.Default())
 
