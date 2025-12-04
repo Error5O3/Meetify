@@ -67,7 +67,7 @@ export default {
   data() {
     return {
         locationLink: "",
-        api: 'http://localhost:8081',
+        api: 'http://18.222.30.255:8081',
         locationName: "",
         isInitial: true,
     }

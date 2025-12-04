@@ -86,7 +86,7 @@ export default {
     data() {
         return {
             width: window.innerWidth,
-            api: 'http://localhost:8081',
+            api: 'http://18.222.30.255:8081',
             eventID: '',
             eventData: {},
             availability: new Set(),
